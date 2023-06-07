@@ -24,7 +24,7 @@ News
 
 2022.12 🎉🎉 [Portrait map art generation by asymmetric Image-to-Image translation](https://direct.mit.edu/leon/article-abstract/56/1/28/113883) has been accepted by ***Leonardo***. 
 
-2022.04 🎉🎉 [Domain enhanced arbitrary image style transfer via contrastive learning](https://dl.acm.org/doi/abs/10.1145/3528233.3530736) has been accepted by ***ACM SIGGRAPH 2023***. [Code](https://github.com/zyxElsa/CAST_pytorch)
+2022.04 🎉🎉 [Domain enhanced arbitrary image style transfer via contrastive learning](https://dl.acm.org/doi/abs/10.1145/3528233.3530736) has been accepted by ***ACM SIGGRAPH 2022***. [Code](https://github.com/zyxElsa/CAST_pytorch)
 
 
 Work Experience
