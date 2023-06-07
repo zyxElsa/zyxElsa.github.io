@@ -81,7 +81,7 @@ analytics:
 # Site Author
 author:
   name             : "Yuxin Zhang"
-  avatar           : "images/profile.png"
+  avatar           : "profile.png"
   bio              : "The Ph.D. candidate @CASIA, NLPR, advised by Prof. Changsheng Xu and Prof. Weiming Dong. Formerly @Tsinghua University."
   location         : "Beijing, China"
   employer         :
