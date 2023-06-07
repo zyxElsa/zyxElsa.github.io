@@ -11,20 +11,20 @@ redirect_from:
 I'm currently a Ph.D. candidate at the National Laboratory of Pattern Recognition, Institute of Automation, Chinese Academy of Sciences, advised by Prof. Changsheng Xu and Prof. Weiming Dong. 
 Previously I received my B.S. in Automation from Tsinghua University in 2020.
 
-My research interest is in the intersection of ***machine learning and computer graphics***. I am interested in building ***interactive, interpretable, and creative generative models***. I am currently working on ***Computational Visual Media Generation, Multimodal Artificial Intelligence and Computational Art***. 
+My research interest is in the intersection of ***Computer Vision and Computer Graphics***. I am interested in building ***interactive, interpretable, and creative generative models***. I am currently working on ***Computational Visual Media Generation, Multimodal Artificial Intelligence and Computational Art***. 
 
 News
 ======
 
-2023.06 📣📣 See our latest work ***[ProSpect: Expanded Conditioning for the Personalization of Attribute-aware Image Generation](https://arxiv.org/abs/2305.16225)*** in [Code](https://github.com/zyxElsa/ProSpect)
+2023.06 📣📣 See our latest work ***[ProSpect: Expanded Conditioning for the Personalization of Attribute-aware Image Generation](https://arxiv.org/abs/2305.16225)*** in [Code](https://github.com/zyxElsa/ProSpect).
 
 2023.05 🎉🎉 [A Unified Arbitrary Style Transfer Framework via Adaptive Contrastive Learning](https://arxiv.org/abs/2303.12710) has been accepted by ***ACM TOG***. [Code](https://github.com/zyxElsa/CAST_pytorch)
 
-2023.04 🎉🎉 [Inversion-Based Style Transfer With Diffusion Models](http://openaccess.thecvf.com/content/CVPR2023/html/Zhang_Inversion-Based_Style_Transfer_With_Diffusion_Models_CVPR_2023_paper.html) has been accepted by ***CVPR 2023***. [Code](https://github.com/zyxElsa/InST) 
+2023.04 🎉🎉 [Inversion-Based Style Transfer With Diffusion Models](http://openaccess.thecvf.com/content/CVPR2023/html/Zhang_Inversion-Based_Style_Transfer_With_Diffusion_Models_CVPR_2023_paper.html) has been accepted by ***IEEE/CVF CVPR 2023***. [Code](https://github.com/zyxElsa/InST) 
 
 2022.12 🎉🎉 [Portrait map art generation by asymmetric Image-to-Image translation](https://direct.mit.edu/leon/article-abstract/56/1/28/113883) has been accepted by ***Leonardo***. 
 
-2022.04 🎉🎉 [Domain enhanced arbitrary image style transfer via contrastive learning](https://dl.acm.org/doi/abs/10.1145/3528233.3530736) has been accepted by ***ACM SIGGRAPH***. [Code](https://github.com/zyxElsa/CAST_pytorch)
+2022.04 🎉🎉 [Domain enhanced arbitrary image style transfer via contrastive learning](https://dl.acm.org/doi/abs/10.1145/3528233.3530736) has been accepted by ***ACM SIGGRAPH 2023***. [Code](https://github.com/zyxElsa/CAST_pytorch)
 
 
 Work Experience
