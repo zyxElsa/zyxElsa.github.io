@@ -30,7 +30,7 @@ News
 Work Experience
 ======
 
-2023.7.24 - Now 📨 Research Intern at the [Graphics AI team](http://www.chongyangma.com/team/index.html) at Kuaishou Technology ([Kwai Inc.](https://www.kwai.com/).
+2023.7.24 - Now 📨 Research Intern at the [Graphics AI team](http://www.chongyangma.com/team/index.html) at Kuaishou Technology ([Kwai Inc.](https://www.kwai.com/)).
 
 Activities
 ======
