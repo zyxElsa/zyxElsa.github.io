@@ -8,10 +8,10 @@ redirect_from:
   - /about.html
 ---
 
-I'm currently a Ph.D. candidate at the National Laboratory of Pattern Recognition, Institute of Automation, Chinese Academy of Sciences, advised by Prof. Changsheng Xu and Prof. Weiming Dong. 
+I'm currently a Ph.D. candidate at the National Laboratory of Pattern Recognition, Institute of Automation, Chinese Academy of Sciences, advised by Prof. [Changsheng Xu](http://nlpr-web.ia.ac.cn/mmc/homepage/csxu.html) and Prof. [Weiming Dong](http://people.ucas.ac.cn/~wmdong?language=en). 
 Previously I received my B.S. in Automation from Tsinghua University in 2020.
 
-My research interest is in the intersection of ***Computer Vision and Computer Graphics***. I am interested in building ***interactive, interpretable, and creative generative models***. I am currently working on ***Computational Visual Media Generation, Multimodal Artificial Intelligence and Computational Art***. 
+My research interest is in the intersection of ***Computer Vision and Computer Graphics***. I am interested in building ***interactive, interpretable, and creative generative models***. I am currently working on ***Computational Visual Media Generation and Computational Art***. 
 
 News
 ======
@@ -30,7 +30,7 @@ News
 Work Experience
 ======
 
-📨 Soon...
+2023.7.24 - Now 📨 Research Intern at the [Graphics AI team](http://www.chongyangma.com/team/index.html) at Kuaishou Technology ([Kwai Inc.](https://www.kwai.com/).
 
 Activities
 ======
@@ -58,7 +58,6 @@ Miscellaneous
 
 📽️ Movies
 
-Visitors
 ======
 
 <a href="https://info.flagcounter.com/bTLG"><img src="https://s11.flagcounter.com/count2/bTLG/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
