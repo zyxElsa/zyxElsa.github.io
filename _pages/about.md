@@ -11,12 +11,12 @@ redirect_from:
 I'm currently a Ph.D. candidate at the National Laboratory of Pattern Recognition, Institute of Automation, Chinese Academy of Sciences, advised by Prof. [Changsheng Xu](http://nlpr-web.ia.ac.cn/mmc/homepage/csxu.html) and Prof. [Weiming Dong](http://people.ucas.ac.cn/~wmdong?language=en). 
 Previously I received my B.S. in Automation from Tsinghua University in 2020.
 
-My research interest is in the intersection of ***Computer Vision and Computer Graphics***. I am interested in building ***interactive, interpretable, and creative generative models***. I am currently working on ***Computational Visual Media Generation and Computational Art***. 
+My research interest is in the intersection of ***Computer Vision and Computer Graphics***. I am interested in building ***interactive, interpretable, and creative generative models***. I am currently working on ***Generative AI, Multimedia, and Computational Art***. 
 
 News
 ======
 
-2023.06 📣📣 See our latest work ***[ProSpect: Expanded Conditioning for the Personalization of Attribute-aware Image Generation](https://arxiv.org/abs/2305.16225)*** in [Code](https://github.com/zyxElsa/ProSpect).
+2023.06 🎉🎉 Our latest work ***[ProSpect: Expanded Conditioning for the Personalization of Attribute-aware Image Generation](https://arxiv.org/abs/2305.16225)*** has been accepted by ***ACM SIGGRAPH Aisa 2023/ACM TOG***. [Code](https://github.com/zyxElsa/ProSpect).
 
 2023.05 🎉🎉 [A Unified Arbitrary Style Transfer Framework via Adaptive Contrastive Learning](https://arxiv.org/abs/2303.12710) has been accepted by ***ACM TOG***. [Code](https://github.com/zyxElsa/CAST_pytorch)
 
@@ -32,21 +32,6 @@ Work Experience
 
 2023.7.24 - Now 📨 Research Intern at the [Graphics AI team](http://www.chongyangma.com/team/index.html) at Kuaishou Technology ([Kwai Inc.](https://www.kwai.com/)).
 
-Activities
-======
-
-2023.05 The Paper, Idea Market, (澎湃新闻思想市场) "The Emerging of Others: Talking about Generative Artificial Intelligence Large Models" (Contributed by Invitation).
-
-2023.04 Microsoft Research Asia, CVPR 2023 Paper Sharing Session. (Poster Exhibition and Report)
-
-2023.01 Exploration and Free Views (探索与争鸣), National Annual Forum for Outstanding Young Scholars, Finding "'Wisdom' from Things: Cultural Representation of Software, Social Participation, and Time-Space Reengineering". (Invited Report)
-
-2022.06 Achievement Exhibition of the Hong Kong Innovation Institute of the Chinese Academy of Sciences. (Poster and Video Exhibition)
-
-2022.05 Chinese Graphics and Image Society, SIGGRAPH 2022 Paper Sharing Session. (Report)
-
-2021.12 Film and Television Research Institute of China National Academy of Arts, the 39th Film and Television Lecture, Metaverse: Films Based on Human-Computer Social Interaction and Its Future Development. (Report)
-
 Miscellaneous
 ======
 
@@ -58,6 +43,7 @@ Miscellaneous
 
 📽️ Movies
 
+Visitors
 ======
 
 <a href="https://info.flagcounter.com/bTLG"><img src="https://s11.flagcounter.com/count2/bTLG/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
