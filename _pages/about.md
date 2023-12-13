@@ -16,7 +16,7 @@ My research interest is in the intersection of ***Computer Vision and Computer G
 News
 ======
 
-2023.06 🎉🎉 Our latest work ***[ProSpect: Expanded Conditioning for the Personalization of Attribute-aware Image Generation](https://arxiv.org/abs/2305.16225)*** has been accepted by ***ACM SIGGRAPH Aisa 2023/ACM TOG***. [Code](https://github.com/zyxElsa/ProSpect).
+2023.06 🎉🎉 Our latest work ***[ProSpect: Prompt Spectrum for Attribute-Aware Personalization of Diffusion Models](https://arxiv.org/abs/2305.16225)*** has been accepted by ***ACM SIGGRAPH Aisa 2023/ACM TOG***. [Code](https://github.com/zyxElsa/ProSpect).
 
 2023.05 🎉🎉 [A Unified Arbitrary Style Transfer Framework via Adaptive Contrastive Learning](https://arxiv.org/abs/2303.12710) has been accepted by ***ACM TOG***. [Code](https://github.com/zyxElsa/CAST_pytorch)
 
