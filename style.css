@@ -21,7 +21,7 @@ body {
   }
   
   .profile-pic {
-    width: 120px;
+    width: 160px;
     border-radius: 8px;
   }
   
@@ -78,4 +78,18 @@ body {
   
   .news-list li {
     margin-bottom: 10px;
+  }
+
+  .experience .exp {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .experience .exp img {
+    width: 120px;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
   }
