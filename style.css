@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: auto;
+    padding: 30px;
+    background: white;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .profile-pic {
+    width: 120px;
+    border-radius: 8px;
+  }
+  
+  .info h1 {
+    margin: 0;
+    font-size: 26px;
+  }
+  
+  .title {
+    font-style: italic;
+    color: #666;
+  }
+  
+  section {
+    margin-top: 40px;
+  }
+  
+  section h2 {
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+  }
+  
+  .highlight {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .experience ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .experience li {
+    margin: 10px 0;
+  }
+  
+  .publications .pub {
+    display: flex;
+    margin-top: 20px;
+    gap: 15px;
+  }
+  
+  .publications .pub img {
+    width: 150px;
+    height: auto;
+    border: 1px solid #ddd;
+  }
+  
+
+  .news-list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .news-list li {
+    margin-bottom: 10px;
+  }
