@@ -118,13 +118,13 @@ footer { margin-top: 50px; padding-top: 20px; border-top: 1px solid var(--line);
 .institution-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 18px; }
 .institution-row { display: flex; align-items: center; gap: 12px; color: var(--text); }
 .institution-row:hover { text-decoration: none; }
-.institution-row:hover .institution-en { display: block; font-size: 13px; font-weight: 600; line-height: 1.5; color: #222; overflow-wrap: normal; }
+.institution-row:hover .institution-en { text-decoration: underline; }
 .institution-icon { position: relative; display: grid; place-items: center; flex: 0 0 44px; width: 44px; height: 44px; border-radius: 50%; overflow: hidden; border: 1px solid #e8ebee; background: #fff; }
 .institution-icon img { display: block; width: 36px; height: 36px; object-fit: contain; }
 .bytedance-icon img { position: absolute; width: 200px; max-width: none; height: auto; left: -6px; top: 50%; transform: translateY(-50%); }
 .institution-text { min-width: 0; display: block; }
 .institution-zh { display: block; margin-top: 2px; font-size: 11px; font-weight: 400; line-height: 1.45; color: var(--muted); }
-.institution-en { display: block; margin-top: 2px; font-size: 11px; line-height: 1.45; color: var(--muted); overflow-wrap: normal; }
+.institution-en { display: block; margin-top: 0; font-size: 13px; font-weight: 600; line-height: 1.5; color: #222; overflow-wrap: normal; }
 @media(max-width:680px) { .profile { max-height: none; overflow: visible; padding-right: 0; } .sidebar-journey { margin-top: 18px; } .institution-list { gap: 16px; } }
 </style>
 </head>
