@@ -1,33 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Yuxin Zhang – Generative AI Researcher</title>
-  <link rel="stylesheet" href="style.css"/>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Yuxin Zhang, Generative AI researcher at ByteDance. Research in computer vision, computer graphics, and creative generative models.">
+<title>Yuxin Zhang – Generative AI Researcher</title>
+<style>
+:root { color-scheme: light; --text: #464a4e; --muted: #737a80; --link: #294b69; --line: #eceeef; --max: 1280px; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 85px; }
+body { margin: 0px; background: rgb(255, 255, 255); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; font-size: 15px; line-height: 1.65; }
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+a:focus-visible { outline: rgb(85, 126, 157) solid 2px; outline-offset: 4px; }
+.skip-link { position: fixed; top: -80px; left: 20px; background: rgb(255, 255, 255); padding: 12px; z-index: 10; }
+.skip-link:focus { top: 12px; }
+.masthead { position: sticky; top: 0px; background: rgba(255, 255, 255, 0.97); border-bottom: 1px solid var(--line); z-index: 5; }
+.masthead nav { max-width: var(--max); margin: auto; display: flex; gap: 30px; align-items: center; padding: 16px 24px; min-height: 61px; }
+.masthead a { color: rgb(115, 122, 128); white-space: nowrap; font-size: 15px; }
+.masthead .brand { font-weight: 700; margin-right: 30px; }
+.page-layout { max-width: var(--max); margin: 0px auto; padding: 34px 24px 60px; display: grid; grid-template-columns: 220px minmax(0px, 1fr); gap: 48px; }
+.profile { position: sticky; top: 96px; align-self: start; overflow-wrap: anywhere; }
+.profile-pic { width: 180px; height: 180px; object-fit: cover; border-radius: 50%; border: 1px solid rgb(241, 242, 243); padding: 5px; }
+.profile h1 { font-size: 23px; line-height: 1.3; margin: 16px 0px 9px; font-weight: 700; }
+.profile p { margin: 5px 0px 12px; font-size: 14px; }
+.profile .interests { margin-top: 23px; line-height: 1.6; }
+.profile-links { list-style: none; margin: 20px 0px 0px; padding: 0px; }
+.profile-links li { margin: 10px 0px; font-size: 14px; }
+.profile-links a { color: var(--text); }
+main { min-width: 0px; }
+section { margin-bottom: 40px; scroll-margin-top: 85px; }
+h2 { font-size: 22px; line-height: 1.4; margin: 0px 0px 15px; padding-bottom: 9px; border-bottom: 1px solid var(--line); }
+p { margin: 0px 0px 12px; }
+.about p { line-height: 1.7; }
+.about h2 { font-size: 22px; }
+.news-list { margin: 0px; padding-left: 22px; }
+.news-list li { padding-left: 3px; margin: 9px 0px; line-height: 1.7; }
+.news-list strong:first-child { font-style: italic; }
+.news-list a { white-space: nowrap; }
+.publication-note { font-size: 13px; color: var(--muted); margin-bottom: 12px; }
+.year-links { display: flex; gap: 18px; font-size: 13px; margin-bottom: 22px; }
+.year-heading { font-size: 16px; color: rgb(99, 108, 116); font-weight: 600; margin: 30px 0px 16px; padding-bottom: 8px; border-bottom: 1px solid var(--line); }
+.pub { display: grid; grid-template-columns: 220px minmax(0px, 1fr); gap: 24px; margin: 0px 0px 26px; padding-bottom: 26px; border-bottom: 1px solid rgb(242, 243, 244); align-items: start; }
+.pub-visual { position: relative; display: block; border-radius: 5px; border: 1px solid rgb(230, 233, 236); overflow: hidden; background: rgb(250, 251, 252); min-height: 145px; padding-top: 28px; }
+.pub-visual img { display: block; width: 100%; height: 130px; object-fit: contain; background: white; padding: 5px; }
+.venue-badge { position: absolute; top: 0px; left: 0px; right: 0px; padding: 3px 9px; background: rgb(238, 242, 245); color: rgb(64, 83, 102); font-size: 10px; line-height: 22px; font-weight: 700; letter-spacing: 0.02em; }
+.preprint .venue-badge { background: rgb(243, 240, 233); color: rgb(116, 100, 74); }
+.paper-label { height: 130px; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 16px; text-align: center; background: rgb(247, 249, 250); color: rgb(93, 115, 132); line-height: 1.4; font-weight: 600; }
+.paper-label small { display: block; margin-top: 12px; color: rgb(133, 147, 157); font-size: 12px; font-weight: 400; }
+.pub h4 { font-size: 17px; line-height: 1.45; margin: 0px 0px 8px; font-weight: 700; }
+.pub h4 a { color: rgb(37, 74, 107); }
+.authors { font-size: 13px; line-height: 1.7; margin: 0px 0px 8px; color: rgb(87, 93, 98); }
+.authors strong { font-weight: 700; color: rgb(53, 59, 64); }
+.authors sup { font-size: 10px; padding-left: 2px; }
+.venue { font-size: 13px; margin-bottom: 10px; font-style: italic; color: rgb(98, 106, 113); }
+.paper-links { display: flex; gap: 7px; flex-wrap: wrap; }
+.paper-links a { display: inline-block; border: 1px solid rgb(214, 224, 231); border-radius: 4px; padding: 1px 9px; font-size: 11px; line-height: 1.8; color: rgb(53, 84, 110); }
+.paper-links a:hover { background: rgb(241, 245, 248); text-decoration: none; }
+.exp { display: flex; gap: 22px; align-items: center; }
+.exp img { width: 95px; height: 60px; object-fit: contain; }
+.exp em { font-size: 14px; color: var(--muted); }
+footer { margin-top: 50px; padding-top: 20px; border-top: 1px solid var(--line); font-size: 12px; color: var(--muted); }
+@media (min-width: 1500px) {
+  :root { --max: 1360px; }
+  .page-layout { grid-template-columns: 230px minmax(0px, 1fr); gap: 56px; }
+}
+@media (max-width: 900px) {
+  .page-layout { grid-template-columns: 180px minmax(0px, 1fr); gap: 28px; padding: 28px 22px; }
+  .profile-pic { width: 155px; height: 155px; }
+  .pub { grid-template-columns: 170px minmax(0px, 1fr); gap: 18px; }
+  .masthead nav { gap: 20px; }
+  .masthead .brand { margin-right: 5px; }
+  .pub h4 { font-size: 16px; }
+}
+@media (max-width: 680px) {
+  html { scroll-padding-top: 75px; }
+  .masthead nav { padding: 13px 16px; gap: 18px; overflow-x: auto; min-height: 54px; }
+  .masthead a { font-size: 13px; }
+  .masthead .brand { margin-right: 0px; }
+  .page-layout { display: block; padding: 24px 20px 40px; }
+  .profile { position: static; display: grid; grid-template-columns: 100px minmax(0px, 1fr); column-gap: 20px; align-items: start; margin-bottom: 32px; }
+  .profile-pic { grid-row: 1 / 5; width: 100px; height: 100px; }
+  .profile h1 { margin: 4px 0px 7px; font-size: 22px; }
+  .profile p { margin: 0px 0px 6px; font-size: 13px; }
+  .profile .interests { grid-column: 1 / -1; margin: 16px 0px 0px; }
+  .profile-links { grid-column: 1 / -1; display: flex; gap: 20px; flex-wrap: wrap; margin: 5px 0px 0px; }
+  .profile-links li { margin: 6px 0px; font-size: 13px; }
+  h2 { font-size: 21px; }
+  .pub { grid-template-columns: 140px minmax(0px, 1fr); gap: 16px; margin-bottom: 22px; padding-bottom: 22px; }
+  .pub h4 { font-size: 15px; }
+  .authors { font-size: 12px; }
+  .pub-visual { min-height: 130px; }
+  .pub-visual img, .paper-label { height: 105px; }
+  .venue-badge { font-size: 9px; padding: 3px 6px; line-height: 18px; }
+  .venue { font-size: 12px; }
+  .paper-label { font-size: 13px; }
+  .publication-note { font-size: 12px; }
+}
+@media (max-width: 420px) {
+  .pub { grid-template-columns: 1fr; gap: 12px; }
+  .pub-visual { width: 100%; max-width: 240px; }
+  .pub-visual img, .paper-label { height: 135px; }
+  .pub h4 { font-size: 16px; }
+  .authors { font-size: 13px; }
+  .profile-links { gap: 18px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+</style>
 </head>
 <body>
-  <div class="container">
-    <!-- Header -->
-    <header class="header">
-      <img src="assets/profile.jpg" alt="Yuxin Zhang" class="profile-pic">
-      <div class="info">
-        <h1>Yuxin Zhang</h1>
-        <p class="title">Researcher of Generative AI</p>
-        <p><a href="https://bytedance.com" target="_blank">ByteDance</a></p>
-        <p>yuxin.zhazel [at] gmail [dot] com</p>
-        <p class="links">
-          <a href="https://scholar.google.com/citations?user=8VD0_DkAAAAJ" target="_blank">Google Scholar</a> |
-          <a href="https://github.com/zyxElsa" target="_blank">GitHub</a>
-        </p>
-      </div>
-    </header>
-
-    <!-- About -->
-    <section class="about">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="masthead"><nav aria-label="Main navigation"><a class="brand" href="#about-me">Homepage</a><a href="#about-me">About Me</a><a href="#news">News</a><a href="#publications">Publications</a><a href="#experience">Experience</a></nav></header>
+<div class="page-layout">
+<aside class="profile" aria-label="Yuxin Zhang profile">
+<img class="profile-pic" src="assets/profile.jpg" alt="Yuxin Zhang" width="180" height="180">
+<h1>Yuxin Zhang</h1><p class="role">Researcher of Generative AI</p><p><a href="https://bytedance.com">ByteDance</a></p>
+<p class="interests">Generative AI · Multimedia · Computational Art</p>
+<ul class="profile-links"><li><a href="mailto:yuxin.zhazel@gmail.com">✉ Email</a></li><li><a href="https://scholar.google.com/citations?user=8VD0_DkAAAAJ">Google Scholar</a></li><li><a href="https://github.com/zyxElsa">GitHub</a></li></ul>
+</aside>
+<main id="main">
+<section class="about" id="about-me">
       <h2>About Me</h2>
       <p>
         I recently joined <strong>ByteDance</strong> as a Researcher of Generative AI. Previously, I received my Ph.D. in Computer Science from the National Laboratory of Pattern Recognition, <strong>Institute of Automation, Chinese Academy of Sciences</strong>, advised by Prof. Changsheng Xu and Prof. Weiming Dong. I obtained my B.S. in Automation from <strong>Tsinghua University</strong> in 2020.
@@ -36,20 +129,157 @@
         My research sits at the intersection of <strong>Computer Vision</strong> and <strong>Computer Graphics</strong>, focusing on building interactive, interpretable, and creative generative models. Currently, I work on <strong>Generative AI</strong>, <strong>Multimedia</strong>, and <strong>Computational Art</strong>.
       </p>
     </section>
-
-    <!-- News -->
-    <section class="news">
-      <h2>News</h2>
+<section class="news" id="news">
+      <h2>🔥 News</h2>
       <ul class="news-list">
         <li><strong>2025.05</strong> 🎉 <em>MotionCrafter: Plug-and-Play Motion Guidance for Diffusion Models</em> accepted to <strong>IEEE TVCG</strong> <a href="https://github.com/zyxElsa/MotionCrafter" target="_blank">[Code]</a></li>
         <li><strong>2025.04</strong> 🎉 <em>B4M: Breaking Low-Rank Adapter for Making Content-Style Customization</em> accepted to <strong>ACM TOG</strong> <a href="https://github.com/ICTMCG/Break-for-make" target="_blank">[Code]</a></li>
         <li><strong>2025.01</strong> 🎉 <em>IP-Prompter: Training-Free Theme-Specific Image Generation via Dynamic Visual Prompting</em> accepted to <strong>ACM SIGGRAPH 2025</strong> <a href="https://github.com/zyxElsa/IP-Prompter" target="_blank">[Code]</a></li>
       </ul>
     </section>
-
-    <!-- Work Experience -->
-    <section class="experience">
-      <h2>Work Experience</h2>
+<section class="publications" id="publications"><h2>📝 Publications</h2>
+<p class="publication-note">Newest first · Includes preprints, labeled below. <a href="https://scholar.google.com/citations?user=8VD0_DkAAAAJ&amp;sortby=pubdate">Google Scholar ↗</a></p>
+<nav class="year-links" aria-label="Publication years"><a href="#year-2026">2026</a><a href="#year-2025">2025</a><a href="#year-2024">2024</a><a href="#year-2023">2023</a><a href="#year-2022">2022</a></nav>
+<!-- Ordered by Google Scholar publication date, including online-first dates. Year-only records retain Scholar order within their year. -->
+<h3 class="year-heading" id="year-2026">2026</h3>
+<article class="pub published" data-date="2026-09-29">
+ <a class="pub-visual" href="https://arxiv.org/abs/2609.38140" aria-label="Read Breaking the Uniformity Trap: Scaling Video Diffusion Model via SplitMoE"><img src="https://yuci-gpt.github.io/SplitMoE/static/images/concept.webp" alt="SplitMoE research preview" loading="lazy" width="220" height="145"><span class="venue-badge">NeurIPS 2026 · Spotlight</span></a>
+ <div class="pub-body"><h4><a href="https://arxiv.org/abs/2609.38140">Breaking the Uniformity Trap: Scaling Video Diffusion Model via SplitMoE</a></h4>
+ <p class="authors">Yu Xu, <strong>Yuxin Zhang</strong><sup title="Corresponding author">✉</sup>, Xiao Yang, Haotian Yang, Yizhi Wang, Xinwei Huang, Minxuan Lin, Angtian Wang, Chongyang Ma, Fan Tang</p><p class="venue">NeurIPS 2026 · Spotlight</p>
+ <div class="paper-links"><a href="https://arxiv.org/abs/2609.38140">Paper</a><a href="https://scholar.google.com/citations?view_op=view_citation&amp;user=8VD0_DkAAAAJ&amp;citation_for_view=8VD0_DkAAAAJ:qxL8FJ1GzNcC">Scholar</a><a href="https://yuci-gpt.github.io/SplitMoE/">Project</a></div></div>
+</article>
+<article class="pub published" data-date="2026-04-24">
+ <a class="pub-visual" href="https://dl.acm.org/doi/abs/10.1145/3797956" aria-label="Read HeadRouter: A Training-Free Image Editing Framework for MM-DiTs by Adaptively Routing Attention Heads"><img src="https://yuci-gpt.github.io/headrouter/static/images/teaser.png" alt="HeadRouter research preview" loading="lazy" width="220" height="145"><span class="venue-badge">ACM TOG 2026</span></a>
+ <div class="pub-body"><h4><a href="https://dl.acm.org/doi/abs/10.1145/3797956">HeadRouter: A Training-Free Image Editing Framework for MM-DiTs by Adaptively Routing Attention Heads</a></h4>
+ <p class="authors">Yu Xu, Fan Tang, Juan Cao, Xiaoyu Kong, <strong>Yuxin Zhang</strong>, Jintao Li, Oliver Deussen, Tong-Yee Lee</p><p class="venue">ACM TOG 2026</p>
+ <div class="paper-links"><a href="https://dl.acm.org/doi/abs/10.1145/3797956">Paper</a><a href="https://scholar.google.com/citations?view_op=view_citation&amp;user=8VD0_DkAAAAJ&amp;citation_for_view=8VD0_DkAAAAJ:KlAtU1dfN6UC">Scholar</a><a href="https://yuci-gpt.github.io/headrouter/">Project</a></div></div>
+</article>
+<article class="pub preprint" data-date="2026-02-02">
+ <a class="pub-visual" href="https://arxiv.org/abs/2602.02092" aria-label="Read FSVideo: Fast Speed Video Diffusion Model in a Highly-Compressed Latent Space"><div class="paper-label" aria-hidden="true"><span>FSVideo</span><small>2026</small></div><span class="venue-badge">arXiv 2026 · Preprint</span></a>
+ <div class="pub-body"><h4><a href="https://arxiv.org/abs/2602.02092">FSVideo: Fast Speed Video Diffusion Model in a Highly-Compressed Latent Space</a></h4>
+ <p class="authors">FSVideo Team, Qingyu Chen, Zhiyuan Fang, Haibin Huang, Xinwei Huang, Tong Jin, Minxuan Lin, Bo Liu, Celong Liu, Chongyang Ma, Xing Mei, Xiaohui Shen, Yaojie Shen, Fuwen Tan, Angtian Wang, Xiao Yang, Yiding Yang, Jiamin Yuan, Lingxi Zhang, <strong>Yuxin Zhang</strong></p><p class="venue">arXiv 2026 · Preprint</p>
+ <div class="paper-links"><a href="https://arxiv.org/abs/2602.02092">Paper</a><a href="https://scholar.google.com/citations?view_op=view_citation&amp;user=8VD0_DkAAAAJ&amp;citation_for_view=8VD0_DkAAAAJ:4TOpqqG69KYC">Scholar</a></div></div>
+</article>
+<article class="pub published" data-date="2026-02-01">
+ <a class="pub-visual" href="https://arxiv.org/abs/2602.01335" aria-label="Read Beyond Pixels: Visual Metaphor Transfer via Schema-Driven Agentic Reasoning"><img src="https://yuci-gpt.github.io/Beyond-Pixels/static/pipeline.png" alt="Beyond Pixels research preview" loading="lazy" width="220" height="145"><span class="venue-badge">SIGGRAPH Asia 2026 · Accepted</span></a>
+ <div class="pub-body"><h4><a href="https://arxiv.org/abs/2602.01335">Beyond Pixels: Visual Metaphor Transfer via Schema-Driven Agentic Reasoning</a></h4>
+ <p class="authors">Yu Xu, <strong>Yuxin Zhang</strong>, Juan Cao, Lin Gao, Chunyu Wang, Oliver Deussen, Tong-Yee Lee, Fan Tang</p><p class="venue">SIGGRAPH Asia 2026 · Accepted</p>
+ <div class="paper-links"><a href="https://arxiv.org/abs/2602.01335">Paper</a><a href="https://scholar.google.com/citations?view_op=view_citation&amp;user=8VD0_DkAAAAJ&amp;citation_for_view=8VD0_DkAAAAJ:_kc_bZDykSQC">Scholar</a><a href="https://yuci-gpt.github.io/Beyond-Pixels/">Project</a></div></div>
+</article>
+<article class="pub published" data-date="2026-01-12">
+ <a class="pub-visual" href="https://arxiv.org/abs/2601.08881" aria-label="Read TAG-MoE: Task-Aware Gating for Unified Generative Mixture-of-Experts"><img src="https://yuci-gpt.github.io/TAG-MoE/static/images/teaser.png" alt="TAG-MoE research preview" loading="lazy" width="220" height="145"><span class="venue-badge">CVPR 2026</span></a>
+ <div class="pub-body"><h4><a href="https://arxiv.org/abs/2601.08881">TAG-MoE: Task-Aware Gating for Unified Generative Mixture-of-Experts</a></h4>
+ <p class="authors">Yu Xu, Hongbin Yan, Juan Cao, Yiji Cheng, Tiankai Hang, Runze He, Zijin Yin, Shiyi Zhang, <strong>Yuxin Zhang</strong>, Jintao Li, Chunyu Wang, Qinglin Lu, Tong-Yee Lee, Fan Tang</p><p class="venue">CVPR 2026</p>
+ <div class="paper-links"><a href="https://arxiv.org/abs/2601.08881">Paper</a><a href="https://scholar.google.com/citations?view_op=view_citation&amp;user=8VD0_DkAAAAJ&amp;citation_for_view=8VD0_DkAAAAJ:YOwf2qJgpHMC">Scholar</a><a href="https://yuci-gpt.github.io/TAG-MoE/">Project</a></div></div>
+</article>
+<h3 class="year-heading" id="year-2025">2025</h3>
+<article class="pub published" data-date="2025-08-10">
+ <a class="pub-visual" href="https://dl.acm.org/doi/abs/10.1145/3721238.3730670" aria-label="Read IP-Prompter: Training-Free Theme-Specific Image Generation via Dynamic Visual Prompting"><img src="assets/ip-prompter.png" alt="IP-Prompter research preview" loading="lazy" width="220" height="145"><span class="venue-badge">SIGGRAPH 2025</span></a>
+ <div class="pub-body"><h4><a href="https://dl.acm.org/doi/abs/10.1145/3721238.3730670">IP-Prompter: Training-Free Theme-Specific Image Generation via Dynamic Visual Prompting</a></h4>
+ <p class="authors"><strong>Yuxin Zhang</strong>, Minyan Luo, Weiming Dong, Xiao Yang, Haibin Huang, Chongyang Ma, Oliver Deussen, Tong-Yee Lee, Changsheng Xu</p><p class="venue">SIGGRAPH 2025</p>
+ <div class="paper-links"><a href="https://dl.acm.org/doi/abs/10.1145/3721238.3730670">Paper</a><a href="https://scholar.google.com/citations?view_op=view_citation&amp;user=8VD0_DkAAAAJ&amp;citation_for_view=8VD0_DkAAAAJ:Zph67rFs4hoC">Scholar</a><a href="https://github.com/zyxElsa/IP-Prompter">Code</a></div></div>
+</article>
+<article class="pub published" data-date="2025-05-16">
+ <a class="pub-visual" href="https://ieeexplore.ieee.org/abstract/document/11006017/" aria-label="Read CreativeSynth: Cross-Art-Attention for Artistic Image Synthesis with Multimodal Diffusion"><div class="paper-label" aria-hidden="true"><span>CreativeSynth</span><small>2025</small></div><span class="venue-badge">IEEE TVCG 2025</span></a>
+ <div class="pub-body"><h4><a href="https://ieeexplore.ieee.org/abstract/document/11006017/">CreativeSynth: Cross-Art-Attention for Artistic Image Synthesis with Multimodal Diffusion</a></h4>
+ <p class="authors">Nisha Huang, Weiming Dong, <strong>Yuxin Zhang</strong>, Fan Tang, Ronghui Li, Chongyang Ma, Xiu Li, Tong-Yee Lee, Changsheng Xu</p><p class="venue">IEEE TVCG 2025</p>
+ <div class="paper-links"><a href="https://ieeexplore.ieee.org/abstract/document/11006017/">Paper</a><a href="https://scholar.google.com/citations?view_op=view_citation&amp;user=8VD0_DkAAAAJ&amp;citation_for_view=8VD0_DkAAAAJ:kNdYIx-mwKoC">Scholar</a></div></div>
+</article>
+<article class="pub published" data-date="2025-05-12">
+ <a class="pub-visual" href="https://ieeexplore.ieee.org/abstract/document/10999055/" aria-label="Read MotionCrafter: Plug-and-Play Motion Guidance for Diffusion Models"><img src="assets/motion.png" alt="MotionCrafter research preview" loading="lazy" width="220" height="145"><span class="venue-badge">IEEE TVCG 2025</span></a>
+ <div class="pub-body"><h4><a href="https://ieeexplore.ieee.org/abstract/document/10999055/">MotionCrafter: Plug-and-Play Motion Guidance for Diffusion Models</a></h4>
+ <p class="authors"><strong>Yuxin Zhang</strong>, Weiming Dong, Fan Tang, Nisha Huang, Haibin Huang, Chongyang Ma, Pengfei Wan, Tong-Yee Lee, Changsheng Xu</p><p class="venue">IEEE TVCG 2025</p>
+ <div class="paper-links"><a href="https://ieeexplore.ieee.org/abstract/document/10999055/">Paper</a><a href="https://scholar.google.com/citations?view_op=view_citation&amp;user=8VD0_DkAAAAJ&amp;citation_for_view=8VD0_DkAAAAJ:ULOm3_A8WrAC">Scholar</a><a href="https://github.com/zyxElsa/MotionCrafter">Code</a></div></div>
+</article>
+<article class="pub published" data-date="2025-04-17">
+ <a class="pub-visual" href="https://dl.acm.org/doi/abs/10.1145/3728461" aria-label="Read B4M: Breaking Low-Rank Adapter for Making Content-Style Customization"><img src="https://yuci-gpt.github.io/B4M/static/images/teaser.png" alt="B4M research preview" loading="lazy" width="220" height="145"><span class="venue-badge">ACM TOG 2025</span></a>
+ <div class="pub-body"><h4><a href="https://dl.acm.org/doi/abs/10.1145/3728461">B4M: Breaking Low-Rank Adapter for Making Content-Style Customization</a></h4>
+ <p class="authors">Yu Xu, Fan Tang, Juan Cao, <strong>Yuxin Zhang</strong>, Oliver Deussen, Weiming Dong, Jintao Li, Tong-Yee Lee</p><p class="venue">ACM TOG 2025</p>
+ <div class="paper-links"><a href="https://dl.acm.org/doi/abs/10.1145/3728461">Paper</a><a href="https://scholar.google.com/citations?view_op=view_citation&amp;user=8VD0_DkAAAAJ&amp;citation_for_view=8VD0_DkAAAAJ:MXK_kJrjxJIC">Scholar</a><a href="https://yuci-gpt.github.io/B4M/">Project</a><a href="https://github.com/ICTMCG/Break-for-make">Code</a></div></div>
+</article>
+<h3 class="year-heading" id="year-2024">2024</h3>
+<article class="pub published" data-date="2024-12-03">
+ <a class="pub-visual" href="https://dl.acm.org/doi/abs/10.1145/3680530.3695444" aria-label="Read Dance Montage through Style Transfer and Music Generation"><div class="paper-label" aria-hidden="true"><span>Dance Montage</span><small>2024</small></div><span class="venue-badge">SIGGRAPH Asia 2024 · Art Papers</span></a>
+ <div class="pub-body"><h4><a href="https://dl.acm.org/doi/abs/10.1145/3680530.3695444">Dance Montage through Style Transfer and Music Generation</a></h4>
+ <p class="authors">Minyan Luo, <strong>Yuxin Zhang</strong>, Peng Xu, Tianle Wang, Yihang Bo, Xin Jin, Weiming Dong</p><p class="venue">SIGGRAPH Asia 2024 · Art Papers</p>
+ <div class="paper-links"><a href="https://dl.acm.org/doi/abs/10.1145/3680530.3695444">Paper</a><a href="https://scholar.google.com/citations?view_op=view_citation&amp;user=8VD0_DkAAAAJ&amp;citation_for_view=8VD0_DkAAAAJ:3fE2CSJIrl8C">Scholar</a></div></div>
+</article>
+<article class="pub published" data-date="2024-12-03">
+ <a class="pub-visual" href="https://dl.acm.org/doi/abs/10.1145/3680528.3687562" aria-label="Read Dance-to-Music Generation with Encoder-Based Textual Inversion"><div class="paper-label" aria-hidden="true"><span>Dance-to-Music</span><small>2024</small></div><span class="venue-badge">SIGGRAPH Asia 2024</span></a>
+ <div class="pub-body"><h4><a href="https://dl.acm.org/doi/abs/10.1145/3680528.3687562">Dance-to-Music Generation with Encoder-Based Textual Inversion</a></h4>
+ <p class="authors">Sifei Li, Weiming Dong, <strong>Yuxin Zhang</strong>, Fan Tang, Chongyang Ma, Oliver Deussen, Tong-Yee Lee, Changsheng Xu</p><p class="venue">SIGGRAPH Asia 2024</p>
+ <div class="paper-links"><a href="https://dl.acm.org/doi/abs/10.1145/3680528.3687562">Paper</a><a href="https://scholar.google.com/citations?view_op=view_citation&amp;user=8VD0_DkAAAAJ&amp;citation_for_view=8VD0_DkAAAAJ:_FxGoFyzp5QC">Scholar</a></div></div>
+</article>
+<article class="pub preprint" data-date="2024-10-30">
+ <a class="pub-visual" href="https://arxiv.org/abs/2410.22979" aria-label="Read LumiSculpt: Enabling Consistent Portrait Lighting in Video Generation"><img src="assets/lumisculpt.png" alt="LumiSculpt research preview" loading="lazy" width="220" height="145"><span class="venue-badge">arXiv 2024 · Preprint</span></a>
+ <div class="pub-body"><h4><a href="https://arxiv.org/abs/2410.22979">LumiSculpt: Enabling Consistent Portrait Lighting in Video Generation</a></h4>
+ <p class="authors"><strong>Yuxin Zhang</strong>, Dandan Zheng, Biao Gong, Shiwen Wang, Jingdong Chen, Ming Yang, Weiming Dong, Changsheng Xu</p><p class="venue">arXiv 2024 · Preprint</p>
+ <div class="paper-links"><a href="https://arxiv.org/abs/2410.22979">Paper</a><a href="https://scholar.google.com/citations?view_op=view_citation&amp;user=8VD0_DkAAAAJ&amp;citation_for_view=8VD0_DkAAAAJ:M3ejUd6NZC8C">Scholar</a></div></div>
+</article>
+<article class="pub published" data-date="2024-09-25">
+ <a class="pub-visual" href="https://ieeexplore.ieee.org/abstract/document/10693493/" aria-label="Read A Comprehensive Evaluation of Arbitrary Image Style Transfer Methods"><div class="paper-label" aria-hidden="true"><span>Style Transfer Evaluation</span><small>2024</small></div><span class="venue-badge">IEEE TVCG · Online 2024</span></a>
+ <div class="pub-body"><h4><a href="https://ieeexplore.ieee.org/abstract/document/10693493/">A Comprehensive Evaluation of Arbitrary Image Style Transfer Methods</a></h4>
+ <p class="authors">Zijun Zhou, Fan Tang, <strong>Yuxin Zhang</strong>, Oliver Deussen, Juan Cao, Weiming Dong, Xiangtao Li, Tong-Yee Lee</p><p class="venue">IEEE TVCG · Online 2024</p>
+ <div class="paper-links"><a href="https://ieeexplore.ieee.org/abstract/document/10693493/">Paper</a><a href="https://scholar.google.com/citations?view_op=view_citation&amp;user=8VD0_DkAAAAJ&amp;citation_for_view=8VD0_DkAAAAJ:hqOjcs7Dif8C">Scholar</a></div></div>
+</article>
+<article class="pub published" data-date="2024-05-08">
+ <a class="pub-visual" href="https://ieeexplore.ieee.org/abstract/document/10522878/" aria-label="Read Style-A-Video: Agile Diffusion for Arbitrary Text-Based Video Style Transfer"><div class="paper-label" aria-hidden="true"><span>Style-A-Video</span><small>2024</small></div><span class="venue-badge">IEEE SPL 2024</span></a>
+ <div class="pub-body"><h4><a href="https://ieeexplore.ieee.org/abstract/document/10522878/">Style-A-Video: Agile Diffusion for Arbitrary Text-Based Video Style Transfer</a></h4>
+ <p class="authors">Nisha Huang, <strong>Yuxin Zhang</strong>, Weiming Dong</p><p class="venue">IEEE SPL 2024</p>
+ <div class="paper-links"><a href="https://ieeexplore.ieee.org/abstract/document/10522878/">Paper</a><a href="https://scholar.google.com/citations?view_op=view_citation&amp;user=8VD0_DkAAAAJ&amp;citation_for_view=8VD0_DkAAAAJ:zYLM7Y9cAGgC">Scholar</a></div></div>
+</article>
+<article class="pub published" data-date="2024-03-25">
+ <a class="pub-visual" href="https://ojs.aaai.org/index.php/AAAI/article/view/27810" aria-label="Read Music Style Transfer with Time-Varying Inversion of Diffusion Models"><div class="paper-label" aria-hidden="true"><span>Music Style Transfer</span><small>2024</small></div><span class="venue-badge">AAAI 2024</span></a>
+ <div class="pub-body"><h4><a href="https://ojs.aaai.org/index.php/AAAI/article/view/27810">Music Style Transfer with Time-Varying Inversion of Diffusion Models</a></h4>
+ <p class="authors">Sifei Li, <strong>Yuxin Zhang</strong>, Fan Tang, Chongyang Ma, Weiming Dong, Changsheng Xu</p><p class="venue">AAAI 2024</p>
+ <div class="paper-links"><a href="https://ojs.aaai.org/index.php/AAAI/article/view/27810">Paper</a><a href="https://scholar.google.com/citations?view_op=view_citation&amp;user=8VD0_DkAAAAJ&amp;citation_for_view=8VD0_DkAAAAJ:Se3iqnhoufwC">Scholar</a></div></div>
+</article>
+<article class="pub published" data-date="2024-01-10">
+ <a class="pub-visual" href="https://ieeexplore.ieee.org/abstract/document/10387416/" aria-label="Read DiffStyler: Controllable Dual Diffusion for Text-Driven Image Stylization"><div class="paper-label" aria-hidden="true"><span>DiffStyler</span><small>2024</small></div><span class="venue-badge">IEEE TNNLS · Online 2024</span></a>
+ <div class="pub-body"><h4><a href="https://ieeexplore.ieee.org/abstract/document/10387416/">DiffStyler: Controllable Dual Diffusion for Text-Driven Image Stylization</a></h4>
+ <p class="authors">Nisha Huang, <strong>Yuxin Zhang</strong>, Fan Tang, Chongyang Ma, Haibin Huang, Weiming Dong, Changsheng Xu</p><p class="venue">IEEE TNNLS · Online 2024</p>
+ <div class="paper-links"><a href="https://ieeexplore.ieee.org/abstract/document/10387416/">Paper</a><a href="https://scholar.google.com/citations?view_op=view_citation&amp;user=8VD0_DkAAAAJ&amp;citation_for_view=8VD0_DkAAAAJ:UeHWp8X0CEIC">Scholar</a></div></div>
+</article>
+<h3 class="year-heading" id="year-2023">2023</h3>
+<article class="pub published" data-date="2023-12-04">
+ <a class="pub-visual" href="https://dl.acm.org/doi/abs/10.1145/3618342" aria-label="Read ProSpect: Prompt Spectrum for Attribute-Aware Personalization of Diffusion Models"><img src="assets/prospect.png" alt="ProSpect research preview" loading="lazy" width="220" height="145"><span class="venue-badge">SIGGRAPH Asia 2023 / ACM TOG</span></a>
+ <div class="pub-body"><h4><a href="https://dl.acm.org/doi/abs/10.1145/3618342">ProSpect: Prompt Spectrum for Attribute-Aware Personalization of Diffusion Models</a></h4>
+ <p class="authors"><strong>Yuxin Zhang</strong>, Weiming Dong, Fan Tang, Nisha Huang, Haibin Huang, Chongyang Ma, Tong-Yee Lee, Oliver Deussen, Changsheng Xu</p><p class="venue">SIGGRAPH Asia 2023 / ACM TOG</p>
+ <div class="paper-links"><a href="https://dl.acm.org/doi/abs/10.1145/3618342">Paper</a><a href="https://scholar.google.com/citations?view_op=view_citation&amp;user=8VD0_DkAAAAJ&amp;citation_for_view=8VD0_DkAAAAJ:ufrVoPGSRksC">Scholar</a><a href="https://github.com/zyxElsa/ProSpect">Code</a></div></div>
+</article>
+<article class="pub published" data-date="2023-07-28">
+ <a class="pub-visual" href="https://dl.acm.org/doi/abs/10.1145/3605548" aria-label="Read A Unified Arbitrary Style Transfer Framework via Adaptive Contrastive Learning"><img src="assets/ucast.png" alt="UCAST research preview" loading="lazy" width="220" height="145"><span class="venue-badge">ACM TOG 2023</span></a>
+ <div class="pub-body"><h4><a href="https://dl.acm.org/doi/abs/10.1145/3605548">A Unified Arbitrary Style Transfer Framework via Adaptive Contrastive Learning</a></h4>
+ <p class="authors"><strong>Yuxin Zhang</strong>, Fan Tang, Weiming Dong, Haibin Huang, Chongyang Ma, Tong-Yee Lee, Changsheng Xu</p><p class="venue">ACM TOG 2023</p>
+ <div class="paper-links"><a href="https://dl.acm.org/doi/abs/10.1145/3605548">Paper</a><a href="https://scholar.google.com/citations?view_op=view_citation&amp;user=8VD0_DkAAAAJ&amp;citation_for_view=8VD0_DkAAAAJ:IjCSPb-OGe4C">Scholar</a><a href="https://github.com/zyxElsa/CAST_pytorch">Code</a></div></div>
+</article>
+<article class="pub published" data-date="2023-02-01">
+ <a class="pub-visual" href="https://direct.mit.edu/leon/article-abstract/56/1/28/113883" aria-label="Read Portrait Map Art Generation by Asymmetric Image-to-Image Translation"><img src="assets/mapart.png" alt="Portrait Map Art research preview" loading="lazy" width="220" height="145"><span class="venue-badge">Leonardo 2023</span></a>
+ <div class="pub-body"><h4><a href="https://direct.mit.edu/leon/article-abstract/56/1/28/113883">Portrait Map Art Generation by Asymmetric Image-to-Image Translation</a></h4>
+ <p class="authors"><strong>Yuxin Zhang</strong>, Fan Tang, Weiming Dong, Thi-Ngoc-Hanh Le, Changsheng Xu, Tong-Yee Lee</p><p class="venue">Leonardo 2023</p>
+ <div class="paper-links"><a href="https://direct.mit.edu/leon/article-abstract/56/1/28/113883">Paper</a><a href="https://scholar.google.com/citations?view_op=view_citation&amp;user=8VD0_DkAAAAJ&amp;citation_for_view=8VD0_DkAAAAJ:9yKSN-GCB0IC">Scholar</a></div></div>
+</article>
+<article class="pub published" data-date="2023">
+ <a class="pub-visual" href="https://ieeexplore.ieee.org/abstract/document/10203866/" aria-label="Read Inversion-Based Style Transfer With Diffusion Models"><img src="assets/inst.png" alt="InST research preview" loading="lazy" width="220" height="145"><span class="venue-badge">CVPR 2023</span></a>
+ <div class="pub-body"><h4><a href="https://ieeexplore.ieee.org/abstract/document/10203866/">Inversion-Based Style Transfer With Diffusion Models</a></h4>
+ <p class="authors"><strong>Yuxin Zhang</strong>, Nisha Huang, Fan Tang, Haibin Huang, Chongyang Ma, Weiming Dong, Changsheng Xu</p><p class="venue">CVPR 2023</p>
+ <div class="paper-links"><a href="https://ieeexplore.ieee.org/abstract/document/10203866/">Paper</a><a href="https://scholar.google.com/citations?view_op=view_citation&amp;user=8VD0_DkAAAAJ&amp;citation_for_view=8VD0_DkAAAAJ:Tyk-4Ss8FVUC">Scholar</a><a href="https://github.com/zyxElsa/InST">Code</a></div></div>
+</article>
+<h3 class="year-heading" id="year-2022">2022</h3>
+<article class="pub published" data-date="2022-07-27">
+ <a class="pub-visual" href="https://dl.acm.org/doi/abs/10.1145/3528233.3530736" aria-label="Read Domain Enhanced Arbitrary Image Style Transfer via Contrastive Learning"><img src="assets/cast.png" alt="CAST research preview" loading="lazy" width="220" height="145"><span class="venue-badge">SIGGRAPH 2022</span></a>
+ <div class="pub-body"><h4><a href="https://dl.acm.org/doi/abs/10.1145/3528233.3530736">Domain Enhanced Arbitrary Image Style Transfer via Contrastive Learning</a></h4>
+ <p class="authors"><strong>Yuxin Zhang</strong>, Fan Tang, Weiming Dong, Haibin Huang, Chongyang Ma, Tong-Yee Lee, Changsheng Xu</p><p class="venue">SIGGRAPH 2022</p>
+ <div class="paper-links"><a href="https://dl.acm.org/doi/abs/10.1145/3528233.3530736">Paper</a><a href="https://scholar.google.com/citations?view_op=view_citation&amp;user=8VD0_DkAAAAJ&amp;citation_for_view=8VD0_DkAAAAJ:u5HHmVD_uO8C">Scholar</a><a href="https://github.com/zyxElsa/CAST_pytorch">Code</a></div></div>
+</article>
+<article class="pub published" data-date="2022-07-18">
+ <a class="pub-visual" href="https://ieeexplore.ieee.org/abstract/document/9859412/" aria-label="Read Quantification of Artist Representativity within an Art Movement"><div class="paper-label" aria-hidden="true"><span>Artist Representativity</span><small>2022</small></div><span class="venue-badge">ICME Workshops 2022</span></a>
+ <div class="pub-body"><h4><a href="https://ieeexplore.ieee.org/abstract/document/9859412/">Quantification of Artist Representativity within an Art Movement</a></h4>
+ <p class="authors"><strong>Yuxin Zhang</strong>, Fan Tang, Weiming Dong, Changsheng Xu</p><p class="venue">ICME Workshops 2022</p>
+ <div class="paper-links"><a href="https://ieeexplore.ieee.org/abstract/document/9859412/">Paper</a><a href="https://scholar.google.com/citations?view_op=view_citation&amp;user=8VD0_DkAAAAJ&amp;citation_for_view=8VD0_DkAAAAJ:d1gkVwhDpl0C">Scholar</a></div></div>
+</article></section>
+<section class="experience" id="experience">
+      <h2>💻 Work Experience</h2>
       <div class="exp">
         <img src="assets/bytedance.png" alt="ByteDance">
         <div>
@@ -59,90 +289,7 @@
         </div>
       </div>
     </section>
+<footer>Last updated October 2026</footer>
+</main></div>
 
-    <!-- Publications -->
-    <section class="publications">
-      <h2>Publications</h2>
-
-      <div class="pub">
-        <img src="assets/ip-prompter.png" alt="IP-Prompter"/>
-        <div>
-          <strong>IP-Prompter: Training-Free Theme-Specific Image Generation via Dynamic Visual Prompting</strong><br>
-          Y Zhang, M Luo, W Dong, X Yang, H Huang, C Ma, O Deussen, TY Lee, CS Xu<br>
-          <em>SIGGRAPH 2025</em>
-          <a href="https://github.com/zyxElsa/IP-Prompter" target="_blank">[Code]</a>
-        </div>
-      </div>
-
-      <div class="pub">
-        <img src="assets/motion.png" alt="MotionCrafter"/>
-        <div>
-          <strong>MotionCrafter: Plug-and-Play Motion Guidance for Diffusion Models</strong><br>
-          Y Zhang, W Dong, F Tang, N Huang, H Huang, C Ma, C Xu<br>
-          <em>IEEE TVCG</em>
-          <a href="https://github.com/zyxElsa/MotionCrafter" target="_blank">[Code]</a>
-        </div>
-      </div>
-
-      <div class="pub">
-        <img src="assets/inst.png" alt="InST"/>
-        <div>
-          <strong>Inversion-Based Style Transfer With Diffusion Models</strong><br>
-          Y Zhang, N Huang, F Tang, H Huang, C Ma, W Dong, C Xu<br>
-          <em>CVPR 2023</em>
-          <a href="https://github.com/zyxElsa/InST" target="_blank">[Code]</a>
-        </div>
-      </div>
-
-      <div class="pub">
-        <img src="assets/cast.png" alt="CAST"/>
-        <div>
-          <strong>Domain Enhanced Arbitrary Image Style Transfer via Contrastive Learning</strong><br>
-          Y Zhang, F Tang, W Dong, H Huang, C Ma, TY Lee, C Xu<br>
-          <em>SIGGRAPH 2022</em>
-          <a href="https://github.com/zyxElsa/CAST" target="_blank">[Code]</a>
-        </div>
-      </div>
-
-      <div class="pub">
-        <img src="assets/prospect.png" alt="ProSpect"/>
-        <div>
-          <strong>ProSpect: Prompt Spectrum for Attribute-Aware Personalization of Diffusion Models</strong><br>
-          Y Zhang, W Dong, F Tang, N Huang, H Huang, C Ma, TY Lee, O Deussen, C Xu<br>
-          <em>SIGGRAPH Asia 2023 / ACM TOG</em>
-          <a href="https://github.com/zyxElsa/ProSpect" target="_blank">[Code]</a>
-        </div>
-      </div>
-
-      <div class="pub">
-        <img src="assets/ucast.png" alt="UCAST"/>
-        <div>
-          <strong>A Unified Arbitrary Style Transfer Framework via Adaptive Contrastive Learning</strong><br>
-          Y Zhang, F Tang, W Dong, H Huang, C Ma, TY Lee, C Xu<br>
-          <em>ACM TOG</em>
-          <a href="https://github.com/zyxElsa/CAST" target="_blank">[Code]</a>
-        </div>
-      </div>
-
-      <div class="pub">
-        <img src="assets/lumisculpt.png" alt="LumiSculpt"/>
-        <div>
-          <strong>LumiSculpt: A Consistency Lighting Control Network for Video Generation</strong><br>
-          Y Zhang, D Zheng, B Gong, J Chen, M Yang, W Dong, C Xu<br>
-          <em>arXiv</em>
-        </div>
-      </div>
-
-      <div class="pub">
-        <img src="assets/mapart.png" alt="Portrait Map Art"/>
-        <div>
-          <strong>Portrait Map Art Generation by Asymmetric Image-to-Image Translation</strong><br>
-          Y Zhang, F Tang, W Dong, TNH Le, C Xu, TY Lee<br>
-          <em>Leonardo</em>
-        </div>
-      </div>
-
-    </section>
-  </div>
-</body>
-</html>
+</body></html>
